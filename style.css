@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: skyblue;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and Profile Picture in Navbar */
+.logo-profile {
+    display: flex;
+    align-items: center;
+}
+
+.logo-profile .logo {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Profile Picture in Navbar */
+.nav-profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Navigation Links for larger screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Hamburger Menu (hidden on larger screens) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media Query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: skyblue;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Home Section */
+.home-section {
+    background-image: url('/glowing-computer-chip-izes-modern-technology-innovation-generated-by-ai.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 6rem 0;
+}
+
+/* Adding blur effect to the background */
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+/* Ensure the text is on top of the blurred background */
+.home-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-section h2 {
+    font-size: 2.5rem;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* About Section with Profile Picture */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+    color: #333; /* Changed color for better visibility */
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make the text clearer */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+}
+.about-content h2 {
+    font-size: 2rem;
+    color: #0073e6; /* Stand-out color for the heading */
+}
+.profile-picture {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.experience-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 4rem 0;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.achievements-content h3 {
+    font-size: 1.8rem;
+    color: #0073e6;
+}
+
+.achievements-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.achievements-content li {
+    margin-bottom: 10px;
+}
+
+/* Career Goals Section */
+.career-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+.home-section{
+    min-height: 50Vh;
+}
+/* Contact Section */
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+    color: #333; /* Changed color for better visibility */
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make the text clearer */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #0073e6; /* Stand-out color for the heading */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: skyblue;
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    background-color: skyblue;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #0073e6;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
