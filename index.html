@@ -36,14 +36,24 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Home Section -->
+    <!-- Home Section with Profile Picture -->
     <section id="home" class="home-section">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I am Kondam Swathi Reddy, an aspiring ICT Analyst with ample experience in technical analysis, digital
-                marketing, and cybersecurity.</p>
-            <a href="#about" class="btn">Learn More</a>
+        <div class="container home_container">
+            <div class="home_box">
+                <h2>Welcome to My Professional Portfolio</h2>
+                <p>I’m Kondam Swathi Reddy, an ICT Analyst with ample experience in technical analysis, digital
+                    marketing,
+                    and cybersecurity. Let's take your business to the next level with the power of data and technology.
+                </p>
+
+            </div>
+            <!-- Profile Picture on the right -->
+            <div class="profile-picture-home">
+                <img src="Swathi linked in dp.jpeg" alt="Kondam Swathi Reddy Profile Picture">
+            </div>
+        </div>
+        <div class="discovermore">
+            <a href="#about" class="btn">Discover More</a>
         </div>
     </section>
 
@@ -52,15 +62,17 @@
         <div class="container about-container">
             <div class="about-content">
                 <h2>About Me</h2>
-                <p>Myself KONDAM SWATHI Reddy. I have ample experience in Digital Marketing, and I am currently
-                    transitioning into the ICT field with a focus on Cybersecurity and Penetration Testing. I have a
-                    rich history of
-                    academic achievements and technical expertise, with a special focus on transitioning into the field
-                    of cybersecurity.</p>
+                <p>Hello, I’m KONDAM SWATHI Reddy, a results-driven professional with a wealth of experience in Digital
+                    Marketing, ICT, and Cybersecurity. Having accumulated knowledge and expertise over the years, I am
+                    now channeling my focus towards building a dynamic career in Cybersecurity and Penetration Testing.
+                    <br><br>
+                    With strong problem-solving abilities, I thrive on turning challenges into opportunities. I’m
+                    passionate about leveraging cutting-edge technologies to secure data, ensure compliance, and deliver
+                    actionable insights for businesses.
+                </p>
             </div>
         </div>
     </section>
-
     <!-- Achievements Section -->
     <section id="achievements" class="achievements-section">
         <div class="container">
@@ -90,47 +102,97 @@
             </div>
         </div>
     </section>
-
     <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <div class="container">
             <h2>Experience</h2>
+
+            <!-- Senior Technical Analyst at AheadRace -->
             <div class="experience-card">
-                <h3>Senior Technical Analyst at AheadRace</h3>
+                <h3><i class="fa fa-laptop"></i> Senior Technical Analyst at AheadRace <span>(Jan 2020 - Aug
+                        2023)</span></h3>
                 <p>Worked as a Senior Technical Analyst dealing with the Questionmark Corporation’s online
                     assessment tool, assisting SAP certification students with technical queries, documentation, and
-                    troubleshooting issues (Jan 2020 - Aug 2023).</p>
+                    troubleshooting issues. My responsibilities also included optimizing tool usage and streamlining the
+                    certification process for students.</p>
             </div>
+
+            <!-- Digital Marketing Associate at Accenture -->
             <div class="experience-card">
-                <h3>Digital Marketing Associate at Accenture</h3>
+                <h3><i class="fa fa-bullhorn"></i> Digital Marketing Associate at Accenture <span>(2018 - 2020)</span>
+                </h3>
                 <p>Worked for Google as a client to resolve technical issues in paid ad campaigns using programmatic
-                    tools like DV360, Display, and Video Ads. Promoted to senior level in Digital Marketing wing.</p>
+                    tools like DV360, Display, and Video Ads. Promoted to senior level in Digital Marketing where I led
+                    the
+                    campaign optimization efforts, driving measurable improvements in performance and engagement.</p>
             </div>
+
+            <!-- Media Analyst at IOPEX Technologies -->
             <div class="experience-card">
-                <h3>Media Analyst at IOPEX Technologies</h3>
+                <h3><i class="fa fa-chart-line"></i> Media Analyst at IOPEX Technologies <span>(2016 - 2018)</span></h3>
                 <p>Classified ads and managed multiple campaigns using internal tools such as IMedia and Jira to ensure
-                    ad performance and campaign setup for paid advertisements.</p>
+                    ad performance and campaign setup for paid advertisements. I was responsible for ensuring campaign
+                    success by closely analyzing ad metrics and providing actionable feedback to clients.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
             <h2>Projects</h2>
+            <!-- TaskBroz App -->
             <div class="project-card">
                 <h3>TaskBroz App</h3>
-                <p>Worked on key features like Global Wall and "Make a Bid" functionality, ensuring that the app is
-                    user-friendly and functional by optimizing task management for taskers and posters.</p>
+                <ul>
+                    <li>Task management platform designed for users to post tasks and make bids.</li>
+                    <li>Worked on key features like Global Wall, "Make a Bid", and task verification.</li>
+                    <li>Improved user experience for task posting and bidding.</li>
+                </ul>
+                <button class="btn" onclick="toggleDescription('taskBrozDescription')">View More</button>
+                <div id="taskBrozDescription" class="project-description" style="display: none;">
+                    <p>The TaskBroz app simplifies the process of finding help for daily tasks. It includes features
+                        that allow users
+                        to bid for tasks, track task progress, and provide feedback after completion. I contributed to
+                        refining the bidding
+                        system and implementing the verification system to ensure task legitimacy and user safety.</p>
+                </div>
             </div>
+            <!-- Athlete Food Choice (AFC) -->
             <div class="project-card">
                 <h3>Athlete Food Choice (AFC)</h3>
-                <p>Collaborated on a project aimed at optimizing athlete nutrition through an advanced survey system.
-                </p>
+                <ul>
+                    <li>Nutritional assessment tool for athletes to improve performance.</li>
+                    <li>Collects dietary data and offers tailored nutrition plans.</li>
+                    <li>Collaborated on integrating data analysis into the survey system.</li>
+                </ul>
+                <button class="btn" onclick="toggleDescription('afcDescription')">View More</button>
+                <div id="afcDescription" class="project-description" style="display: none;">
+                    <p>The Athlete Food Choice project offers personalized nutrition plans based on dietary habits and
+                        goals.
+                        I contributed to developing the system that generated actionable nutritional insights, ensuring
+                        athletes meet their
+                        dietary and performance needs.</p>
+                </div>
+            </div>
+            <!-- Digital Marketing Intern at Accenture -->
+            <div class="project-card">
+                <h3>Digital Marketing Intern at Accenture</h3>
+                <ul>
+                    <li>Analyzed online ad campaigns using Google Ads and DV360.</li>
+                    <li>Optimized ad performance and prepared reports for stakeholders.</li>
+                    <li>Gained hands-on experience in ad optimization tools.</li>
+                </ul>
+                <button class="btn" onclick="toggleDescription('dmAccentureDescription')">View More</button>
+                <div id="dmAccentureDescription" class="project-description" style="display: none;">
+                    <p>My internship experience at Accenture gave me a comprehensive understanding of the digital
+                        marketing landscape.
+                        I worked with multiple advertising platforms and tools like Google Ads Manager and DV360. I
+                        contributed to optimizing ad campaigns
+                        and boosting ROI through data-driven decision-making.</p>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Career Goals Section -->
     <section id="career" class="career-section">
         <div class="container">
@@ -140,26 +202,35 @@
                 security.</p>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
 
-            <!-- Static Contact Info -->
+            <!-- Static Contact Info with Icons -->
             <div class="contact-info">
-                <p>Email: <a href="mailto:swathireddyaus0809@gmail.com">swathireddyaus0809@gmail.com</a></p>
-                <a href="https://www.linkedin.com/in/swathi-reddy-kondam-4b80291b/" target="_blank">LinkedIn: Swathi
-                    Reddy Kondam</a>
+                <p><i class="fas fa-envelope"></i> Email: <a
+                        href="mailto:swathireddyaus0809@gmail.com">swathireddyaus0809@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/swathi-reddy-kondam-4b80291b/"
+                        target="_blank">LinkedIn: Swathi Reddy Kondam</a></p>
             </div>
-        </div>
     </section>
-
     <footer>
         <p>&copy; 2024 Kondam Swathi Reddy | All Rights Reserved</p>
     </footer>
-
     <script src="script.js"></script>
+    <script>
+        // JavaScript function to toggle the display of detailed descriptions
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
